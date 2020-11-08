@@ -5,9 +5,9 @@ def price_string_to_price_euro(string):
       return:
         price en int
   """
-    try:
-        new_string = string[1:]
-        price = int(new_string)
-    except:
-        price = 0
-    return price
+  try:
+    new_string = string[1:]
+    price = float(new_string)
+  except:
+    price = 0
+  return price
